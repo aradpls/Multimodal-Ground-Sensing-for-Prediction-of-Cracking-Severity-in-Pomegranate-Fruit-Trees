@@ -1,0 +1,7 @@
+path: /content/drive/MyDrive/Thesis/POM-IMG/Pom_object_TL_code
+train: images/train  # Path to your training images
+val: images/val  # Path to your validation images
+
+
+nc: 1  # Number of classes (e.g., pomegranate)
+names: ['pomegranate']  # Class names
