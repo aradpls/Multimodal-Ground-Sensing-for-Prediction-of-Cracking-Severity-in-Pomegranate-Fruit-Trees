@@ -6,7 +6,6 @@
 
 <h2 align="center">
 Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking using multimodal deep learning approaches. The work integrates image-based features and temporal metadata within a CNN–LSTM architecture, incorporating attention mechanisms to enhance feature representation across time points. Additionally, fuzzy labeling techniques are explored to better model uncertainty in cracking severity classification.
-</h2>
 <p align="left">
 </p>
 
