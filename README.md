@@ -10,5 +10,21 @@ Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking u
 
 ![NY](https://github.com/user-attachments/assets/02332191-9e82-4a50-9ce6-f5d8158e9915)
 
+<h4 align="center"> YOLOv8 architecture: </h4>
+
+![arc2](https://github.com/user-attachments/assets/45935619-e667-4e1c-9347-050df503705e)
+
+<h4 align="center"> Selected transfer learning technique  for object Detection: </h4>
+
+<img width="565" height="107" alt="TL" src="https://github.com/user-attachments/assets/cb7825f6-4008-4bc2-af23-27a4fa872075" />
+
+<h4 align="center"> U-Net architecture: </h4>
+
+![arc3](https://github.com/user-attachments/assets/37ba06bb-3e30-4ee9-8abe-58870ffa8992)
+
+<h4 align="center"> CNN + LSTM general intermediate fusion architecture: </h4>
+
+![fc11](https://github.com/user-attachments/assets/9679b99b-0ad8-49b2-a7d9-973ab5dc12f3)
+
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> </p>
