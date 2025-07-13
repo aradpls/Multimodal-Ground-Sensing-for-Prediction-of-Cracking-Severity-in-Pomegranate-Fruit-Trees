@@ -5,13 +5,13 @@
 <h4 align="center">Thesis By: Arad Peleg </h4>
 
 <h2 align="center">
-📘 Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking using multimodal deep learning approaches. The work integrates image-based features and temporal metadata within a CNN–LSTM architecture, incorporating attention mechanisms to enhance feature representation across time points. Additionally, fuzzy labeling techniques are explored to better model uncertainty in cracking severity classification.
+Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking using multimodal deep learning approaches. The work integrates image-based features and temporal metadata within a CNN–LSTM architecture, incorporating attention mechanisms to enhance feature representation across time points. Additionally, fuzzy labeling techniques are explored to better model uncertainty in cracking severity classification.
 </h2>
 <p align="left">
 </p>
 
 <h4 align="center"> Algorithm Pipe line </h4>
-![NY](https://github.com/user-attachments/assets/334e6f61-32f0-4909-a009-12ee438c6270)
+[NY](https://github.com/user-attachments/assets/334e6f61-32f0-4909-a009-12ee438c6270)
 
 
 <h3 align="left">Languages and Tools:</h3>
