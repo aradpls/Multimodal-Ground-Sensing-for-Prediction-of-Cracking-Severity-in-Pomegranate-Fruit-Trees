@@ -26,7 +26,12 @@ Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking u
 
 <h4 align="center"> CNN + LSTM general intermediate fusion architecture: </h4>
 
-![fc11](https://github.com/user-attachments/assets/9679b99b-0ad8-49b2-a7d9-973ab5dc12f3)
+![ZDA2322223](https://github.com/user-attachments/assets/b3d88d0b-b5c5-4b02-bd23-9c497c3674a5)
+
+<h4 align="center"> Pure LSTM architecture: </h4>
+
+![WEREBLUE](https://github.com/user-attachments/assets/133cba20-1e5d-4f95-91d9-52a7038d2011)
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> </p>
