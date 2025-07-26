@@ -21,7 +21,7 @@ Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking u
 
 <h4 align="center"> CNN+LSTM model configurations: </h4>
 
-
+![zda](https://github.com/user-attachments/assets/c51fa4c7-8380-4a2f-a2a7-bb3e68698fe8)
 
 **Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
 
