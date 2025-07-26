@@ -14,7 +14,7 @@ Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking u
 - 🌡️ Thermal feature extraction code
 
 2. CNN+LSTM Models Code Folder
-- 🧠 All CNN+LSTM model configurations
+- 🧠 All CNN+LSTM model configurations (model 1 to 6)
 - 📈 Statistical analysis code
 - 🧠 Fuzzy CNN+LSTM for Model-5 (best performing model)
 - 🧠 Binary CNN+LSTM for Model-5 (best performing model)
