@@ -6,7 +6,7 @@
 
 Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking using multimodal deep learning approaches. The work integrates image-based features and temporal metadata extracted from meteorological station and thermal images within a CNN+LSTM architecture, incorporating attention mechanisms to enhance feature representation across time points. Additionally, fuzzy labeling techniques and binary labling are explored to better model uncertainty in cracking severity classification.
 
-** 📁 In this repository You will have access to:** 
+<strong> 📁 In this repository You will have access to:</strong> 
 1. Preprocessing Models Code Folder:
 - 📦 Object detection model code (YOLOv8)
 - 🧩 Segmentation model code (including GrabCut and augmantion code)
@@ -18,8 +18,6 @@ Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking u
 - 📈 Statistical analysis code
 - 🧠 Fuzzy CNN+LSTM for Model-5 (best performing model)
 - 🧠 Binary CNN+LSTM for Model-5 (best performing model)
-
--> <strong>Baseline Evaluatio_And_Raw_Transferability_NoteBooks_Py</strong> 
 
 **Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
 
