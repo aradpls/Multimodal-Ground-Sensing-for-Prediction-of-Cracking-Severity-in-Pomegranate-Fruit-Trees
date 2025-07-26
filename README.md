@@ -2,7 +2,12 @@
 <p align="left">
 </p>
 
-<h4 align="center">Thesis By: Arad Peleg </h4>
+<h4 align="center"> Thesis By: Arad Peleg </h4>
+<h4 align="center"> Supervised By: Prof. Yael Edan, Dr. Victor Alchanatis </h4>
+<h4 align="center"> Research Collaboration: Yoav Yoktan, Guy Lidor, Roman Brikman, Michael Brener, Assaf Tzur, Idit Ginzberg, Christian Reagan and Manuela Zude </h4>
+<h4 align="center"> Institute of Agricultural and Biosystems Engineering, Agricultural Research Organization, Volcani Institute </h4>
+<h4 align="center"> Dept. of Industrial Engineering & Management, Ben-Gurion University of the Negev </h4>
+<h4 align="center">  Leibniz-Institut für Agrartechnik und Bioökonomie e.V. (ATB), Potsdam, Germany </h4>
 
 Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking using multimodal deep learning approaches. The work integrates image-based features and temporal metadata extracted from meteorological station and thermal images within a CNN+LSTM architecture, incorporating attention mechanisms to enhance feature representation across time points. Additionally, fuzzy labeling techniques and binary labling are explored to better model uncertainty in cracking severity classification. This research is conducted under the CrackSense project, as a collaboration between Ben-Gurion University of the Negev (Department of Industrial Engineering and Management) and the Volcani Institute, combining expertise in AI, agriculture, and sensing technologies.
 
