@@ -6,6 +6,10 @@
 
 Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking using multimodal deep learning approaches. The work integrates image-based features and temporal metadata extracted from meteorological station and thermal images within a CNN+LSTM architecture, incorporating attention mechanisms to enhance feature representation across time points. Additionally, fuzzy labeling techniques and binary labling are explored to better model uncertainty in cracking severity classification.
 
+This research is carried out as part of the CrackSense project — a Horizon Europe initiative running from January 2023 to December 2026. CrackSense brings together 14 partners from 7 countries to address the challenge of fruit cracking in crops such as citrus, pomegranate, table grapes, and sweet cherries. The project focuses on developing and scaling advanced sensing technologies, aiming to provide real-time sensor data through experimental field trials and pilot implementations. By contributing to this multidisciplinary effort, the thesis supports CrackSense’s broader goal of enhancing precision agriculture through intelligent monitoring and prediction systems.
+
+<img width="246" height="125" alt="תמונה1" src="https://github.com/user-attachments/assets/495506a4-be14-4ea7-a601-0667fad7af31" />
+
 <strong> 📁 In this repository You will have access to:</strong> 
 1. Preprocessing Models Code Folder:
 - 📦 Object detection model code (YOLOv8)
