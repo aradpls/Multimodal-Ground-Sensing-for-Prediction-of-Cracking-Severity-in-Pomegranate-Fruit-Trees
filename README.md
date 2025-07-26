@@ -19,6 +19,10 @@ Hi 👋, This thesis investigates the prediction of pomegranate fruit cracking u
 - 🧠 Fuzzy CNN+LSTM for Model-5 (best performing model)
 - 🧠 Binary CNN+LSTM for Model-5 (best performing model)
 
+<h4 align="center"> CNN+LSTM model configurations: </h4>
+
+
+
 **Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
 
 <h4 align="center"> Algorithm Pipe line: </h4>
