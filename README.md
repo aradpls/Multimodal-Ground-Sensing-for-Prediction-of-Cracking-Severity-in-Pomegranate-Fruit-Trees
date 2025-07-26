@@ -50,7 +50,7 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 
 ![ZDA2322223](https://github.com/user-attachments/assets/b3d88d0b-b5c5-4b02-bd23-9c497c3674a5)
 
-<h4 align="center"> Pure LSTM architecture: </h4>
+<h4 align="center"> Pure LSTM architecture (model-6): </h4>
 
 ![WEREBLUE](https://github.com/user-attachments/assets/133cba20-1e5d-4f95-91d9-52a7038d2011)
 
