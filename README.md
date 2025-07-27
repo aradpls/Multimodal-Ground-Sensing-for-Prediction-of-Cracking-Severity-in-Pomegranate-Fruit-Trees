@@ -44,6 +44,8 @@ Data organization is primarily handled in the Model-1 notebook, and adjustments 
 
 ![NY](https://github.com/user-attachments/assets/02332191-9e82-4a50-9ce6-f5d8158e9915)
 
+This project presents a multimodal deep learning pipeline for predicting pomegranate fruit cracking severity using RGB and thermal images combined with meteorological data. An initial YOLOv8 object detection model, trained with manual annotations and external PG-YOLO data, was fine-tuned and used to detect fruit regions. These detections were then used to generate segmentation masks using the GrabCut algorithm, which refines object boundaries by iteratively separating foreground (fruit) from background (e.g., sky, ground). Segmented images were further processed using a U-Net model to isolate pomegranate regions, followed by image enhancements like CLAHE, Gaussian blurring, and Laplacian edge detection. Thermal and environmental features were extracted and aligned with the images based on timestamps, with feature engineering, multicollinearity checks, and normalization applied. All processed image and tabular inputs were fed into CNN+LSTM models, where CNN handled spatial features and LSTM captured temporal patterns. The final output predicts cracking severity levels for each fruit instance.
+
 <h4 align="center"> YOLOv8 architecture: </h4>
 
 ![arc2](https://github.com/user-attachments/assets/45935619-e667-4e1c-9347-050df503705e)
@@ -51,6 +53,8 @@ Data organization is primarily handled in the Model-1 notebook, and adjustments 
 <h4 align="center"> Selected transfer learning technique  for object Detection: </h4>
 
 <img width="565" height="107" alt="TL" src="https://github.com/user-attachments/assets/cb7825f6-4008-4bc2-af23-27a4fa872075" />
+
+To detect pomegranates on trees, we used the YOLOv8s object detection model, chosen for its balance between speed and accuracy. We initially trained the model on an external dataset (PG-YOLO) containing over 13,000 annotated images of pomegranates. After this, we applied transfer learning by fine-tuning the model on a smaller set of 616 manually labeled images from our own orchard data. This allowed the model to adapt to our specific environmental conditions, such as lighting and background variation, while significantly reducing the need for extensive manual annotation. We tested several train-test splits to evaluate the model's robustness under different data conditions and found that the model maintained strong detection capabilities even with smaller training sets. This step provided accurate bounding boxes around fruits, which were then used in the later stages of the pipeline, such as cropping and segmentation.
 
 <h4 align="center"> U-Net architecture: </h4>
 
