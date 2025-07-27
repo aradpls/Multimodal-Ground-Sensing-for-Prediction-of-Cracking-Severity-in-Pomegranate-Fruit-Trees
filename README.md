@@ -21,8 +21,10 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 - 📦 Object detection model code (YOLOv8)
 - 🧩 Segmentation model code (U-Net) --> including GrabCut and augmantion (in U-Net notebook) code
 - ✂️ Image cropping code (RGB and Thermal sensors)
-- 🌡️ Thermal feature extraction code
+- 🌡️ Thermal image and feature extraction code
 - 🔥🌍 Fitting thermal and environmental tabular data code
+
+Image cropping, Thermal image and feature extraction and Fitting thermal and environmental tabular data in Processing notebook.
 
 2. CNN+LSTM Models Code Folder:
 - 🧠 All CNN+LSTM model configurations (model 1 to 6)
