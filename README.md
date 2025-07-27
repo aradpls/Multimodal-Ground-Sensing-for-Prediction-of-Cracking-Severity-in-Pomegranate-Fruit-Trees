@@ -26,7 +26,7 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 
 2. CNN+LSTM Models Code Folder:
 - 🧠 All CNN+LSTM model configurations (model 1 to 6)
-- 📈 Statistical analysis code
+- 📈 Statistical analysis code for diffrence in field sided predictions
 - 🧠 Fuzzy CNN+LSTM for Model-5 (best performing model)
 - 🧠 Binary CNN+LSTM for Model-5 (best performing model)
 
