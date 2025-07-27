@@ -22,6 +22,7 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 - 🧩 Segmentation model code (including GrabCut and augmantion code)
 - ✂️ Image cropping code (RGB and Thermal sensors)
 - 🌡️ Thermal feature extraction code
+- 🔥🌍 Fitting thermal and environmental tabular data code
 
 2. CNN+LSTM Models Code Folder
 - 🧠 All CNN+LSTM model configurations (model 1 to 6)
