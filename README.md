@@ -76,11 +76,11 @@ Six model configurations were developed to progressively incorporate different e
 
 Data splitting followed a standard 80-20 rule, with 80 percent used for training and 20 percent for testing. From the training set, 20 percent was further set aside for validation. In early experiments (Models 1 and 2), the dataset was split based on the tree row’s orientation (north or south) to determine whether location had an impact on cracking behavior. Later models combined data from both rows after statistical tests confirmed no significant differences in cracking behavior or prediction variance. When split by row, there were 980 training, 245 validation, and 321 test samples per side. When combined, the dataset included 1960 training, 490 validation, and 642 test samples. All models were trained with a batch size of 16 and an initial learning rate of 0.001. Early models were trained for 10 epochs, while all subsequent models were trained for 30. Model weights corresponding to the lowest validation loss were saved and used for final evaluation. Notably, the test set contained only class 0 and class 2 samples, comprising 334 and 298 three-time-point sequences, respectively. "After identifying the best-performing model (model-5), a two-stage sensitivity analysis was conducted. The first stage focused on evaluating different learning rates and batch sizes to determine the optimal training configuration. The second stage analyzed the impact of various image processing parameters on model performance."
 
-<h4 align="center"> Batch and Learning Rate Analysis (model-6): </h4>
+<h4 align="center"> Batch and Learning Rate Analysis: </h4>
 
 ![ZDa](https://github.com/user-attachments/assets/03bffc44-2692-46f0-be6b-e7c8a183c39f)
 
-<h4 align="center"> Image Processing Parameter Analysis (model-6): </h4>
+<h4 align="center"> Image Processing Parameter Analysis: </h4>
 
 ![ZDa2](https://github.com/user-attachments/assets/aa0e8578-f5fb-4b72-8b32-3281ece9d113)
 
