@@ -19,7 +19,7 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 <strong> 📁 In this repository You will have access to:</strong> 
 1. Preprocessing Models Code Folder:
 - 📦 Object detection model code (YOLOv8)
-- 🧩 Segmentation model code (U-Net) --> including GrabCut and augmantion code
+- 🧩 Segmentation model code (U-Net) --> including GrabCut and augmantion (in U-Net notebook) code
 - ✂️ Image cropping code (RGB and Thermal sensors)
 - 🌡️ Thermal feature extraction code
 - 🔥🌍 Fitting thermal and environmental tabular data code
