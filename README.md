@@ -29,6 +29,7 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 - 📈 Statistical analysis code
 - 🧠 Fuzzy CNN+LSTM for Model-5 (best performing model)
 - 🧠 Binary CNN+LSTM for Model-5 (best performing model)
+Data organization is primarily handled in the Model-1 notebook, and adjustments are also generally made in the CNN+LSTM models notebook.
 
 <h4 align="center"> CNN+LSTM model configurations: </h4>
 
