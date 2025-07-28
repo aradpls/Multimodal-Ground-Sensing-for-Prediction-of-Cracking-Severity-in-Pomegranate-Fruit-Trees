@@ -29,8 +29,8 @@ Image cropping, Thermal image and feature extraction and Fitting thermal and env
 2. CNN+LSTM Models Code Folder:
 - 🧠 All CNN+LSTM model configurations (model 1 to 6)
 - 📈 Statistical analysis code for diffrence in field side predictions
-- 🧠 Fuzzy CNN+LSTM for Model-5 (best performing model)
-- 🧠 Binary CNN+LSTM for Model-5 (best performing model)
+- 🧠 Fuzzy labeling CNN+LSTM for Model-5 (best performing model)
+- 🧠 Binary labeling CNN+LSTM for Model-5 (best performing model)
 
 Data organization is primarily handled in the Model-1 notebook, and adjustments are also generally made in the CNN+LSTM models notebook.
 
