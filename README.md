@@ -64,7 +64,7 @@ This project presents a multimodal deep learning pipeline for predicting pomegra
 
 - Selected transfer learning technique  for object Detection: 
 
-<img width="565" height="107" alt="TL" src="https://github.com/user-attachments/assets/cb7825f6-4008-4bc2-af23-27a4fa872075" />
+<h4 align="center"> <img width="565" height="107" alt="TL" src="https://github.com/user-attachments/assets/cb7825f6-4008-4bc2-af23-27a4fa872075" /> </h4>
 
 - Transfer learning traning set up:
 
