@@ -77,7 +77,7 @@ To detect pomegranates on trees, we used the YOLOv8s object detection model, cho
 ![SPLOT](https://github.com/user-attachments/assets/9ab27e2f-2587-47ed-b9dc-6f2e83f263df)
 
 
-<h4 align="center"> YOLOv8 Pomegranate Detection Results : <h4 align="center">
+<h4 align="center"> YOLOv8 Pomegranate Detection Results : </h4>
 
 YOLOv8 pomegranate detection transfer learning result:
 
