@@ -13,7 +13,7 @@ Hi 👋, This research investigates the prediction of on-tree pomegranate fruit 
 
 CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from January 2023 to December 2026. It brings together 14 partners from 7 countries to address the challenge of fruit cracking in crops such as citrus, pomegranate, table grapes, and sweet cherries. The project focuses on developing and scaling advanced sensing technologies, aiming to provide real-time sensor data through experimental field trials and pilot implementations. As part of this broader multidisciplinary effort, this thesis contributes to CrackSense’s goal of enhancing precision agriculture through intelligent monitoring and prediction systems.
 
-<img width="246" height="125" alt="תמונה1" src="https://github.com/user-attachments/assets/495506a4-be14-4ea7-a601-0667fad7af31" /> 
+<h4 align="center"> <img width="246" height="125" alt="תמונה1" src="https://github.com/user-attachments/assets/495506a4-be14-4ea7-a601-0667fad7af31" /> </h4>
 
 
 <strong> 📁 In this repository You will have access to:</strong> 
@@ -36,7 +36,7 @@ Data organization is primarily handled in the Model-1 notebook, and adjustments 
 
 <h4 align="center"> Data Collection: </h4>
 
-<img width="632" height="236" alt="zsa" src="https://github.com/user-attachments/assets/e7a0186c-9fd4-4405-9681-411197677c30" />
+<h4 align="center"> <img width="632" height="236" alt="zsa" src="https://github.com/user-attachments/assets/e7a0186c-9fd4-4405-9681-411197677c30" /> </h4>
 
 Data was collected using the TOMMY system, which includes thermal and RGB sensors, between August and November 2024 in Tzara near Beit Shemesh, Israel. Images of the Wonderful pomegranate cultivar were captured under three conditions: at night with artificial lighting, at sunrise with dew on the fruits, and during the day under full sun. Around 4400 images were taken, typically twice per time point. For each tree on one side of the field, a corresponding tree from the opposite side (north and south side of the field) was also imaged to ensure full coverage. The system captured 40–60 images per tree side from different angles along the X-axis to cover the entire canopy. RGB images used autofocus with occasional manual lighting adjustments, while thermal images were manually focused for sharper temperature contrast. All images were visually inspected for quality. A meteorological station was also used to log environmental data every minute during each acquisition session.
 
