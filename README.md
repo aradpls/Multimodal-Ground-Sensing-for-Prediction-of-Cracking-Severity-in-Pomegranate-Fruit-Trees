@@ -77,26 +77,26 @@ To detect pomegranates on trees, we used the YOLOv8s object detection model, cho
 ![SPLOT](https://github.com/user-attachments/assets/9ab27e2f-2587-47ed-b9dc-6f2e83f263df)
 
 
-<h4 align="center"> YOLOv8 Pomegranate Detection Results : </h4>
+<h4 align="center"> YOLOv8 Pomegranate Detection Results : <h4 align="center">
 
 YOLOv8 pomegranate detection transfer learning result:
 
 ![ZDAresutls](https://github.com/user-attachments/assets/1d71a923-cdef-47c0-b446-e138ff1a7823)
 
 - Raw Transfer
-<img width="875" height="318" alt="image" src="https://github.com/user-attachments/assets/40bf9516-3677-4c32-9eb6-c5a4342e2926" />
+<h4 align="center"> <img width="875" height="318" alt="image" src="https://github.com/user-attachments/assets/40bf9516-3677-4c32-9eb6-c5a4342e2926" /> </h4>
 
 - Fine tuned model
 
-<img width="857" height="312" alt="image" src="https://github.com/user-attachments/assets/2d674b70-c1f5-47a0-9a16-8f3cb5c2b85b" />
+<h4 align="center"> <img width="857" height="312" alt="image" src="https://github.com/user-attachments/assets/2d674b70-c1f5-47a0-9a16-8f3cb5c2b85b" /> </h4>
 
 - Raw trnsfer Vs Fine tuned model precision recall curve
 
-<img width="1015" height="347" alt="image" src="https://github.com/user-attachments/assets/d09da223-846b-4ddc-ba4a-c745123bba28" />
+<h4 align="center"> <img width="1015" height="347" alt="image" src="https://github.com/user-attachments/assets/d09da223-846b-4ddc-ba4a-c745123bba28" /> </h4>
 
 - Sensitivity analysis split testing on transfer learning reuslts: 
 
-<img width="826" height="626" alt="image" src="https://github.com/user-attachments/assets/3562174c-84aa-4b99-8002-caa5e772ea2d" />
+<h4 align="center"> <img width="826" height="626" alt="image" src="https://github.com/user-attachments/assets/3562174c-84aa-4b99-8002-caa5e772ea2d" /> </h4>
 
 The object detection split tests showed minor differences across the four configurations. Test 1 achieved strong overall performance with mAP50 of 86.6%, mAP50-95 of 54.1%, and F1-score of 82.0%, reflecting high detection accuracy and good localization. Although Test 2 had slightly higher mAP50 (86.9%) and precision (87.1%), it showed a small drop in mAP50-95. Test 3 yielded similar results, while Test 4 had the weakest performance. In the end, Test 1 was selected for generating bounding boxes for Grab-Cut segmentation due to its consistent advantage in localization and recall, offering the best trade-off for precise mask generation.
 
@@ -104,7 +104,7 @@ The object detection split tests showed minor differences across the four config
 
 - Exmaple mask creation
 
-<img width="936" height="343" alt="image" src="https://github.com/user-attachments/assets/329035d0-40de-4273-bb09-4e45b60ced48" />
+<h4 align="center"> <img width="936" height="343" alt="image" src="https://github.com/user-attachments/assets/329035d0-40de-4273-bb09-4e45b60ced48" /> </h4>
 
 The mean SSIM  score between the YOLO-cropped RGB images and the corresponding Grab-Cut masks was 87.6%, indicating a high level of structural similarity. This suggests that the Grab-Cut algorithm (section  generally succeeded in preserving the shape and spatial structure of the objects identified by YOLO.
 
@@ -122,7 +122,7 @@ We used the U-Net architecture for segmenting pomegranates from RGB images. U-Ne
 
 - Pomegranate Segmentation Results
 
-  <img width="855" height="586" alt="image" src="https://github.com/user-attachments/assets/1b28859f-bf5d-4c08-90c6-d506cfd9b355" />
+<h4 align="center"> <img width="855" height="586" alt="image" src="https://github.com/user-attachments/assets/1b28859f-bf5d-4c08-90c6-d506cfd9b355" /> </h4>
 
 - Pomegranate Segmentation Example
 
