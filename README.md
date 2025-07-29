@@ -40,11 +40,11 @@ Data organization is primarily handled in the Model-1 notebook, and adjustments 
 
 Data was collected using the TOMMY system, which includes thermal and RGB sensors, between August and November 2024 in Tzara near Beit Shemesh, Israel. Images of the Wonderful pomegranate cultivar were captured under three conditions: at night with artificial lighting, at sunrise with dew on the fruits, and during the day under full sun. Around 4400 images were taken, typically twice per time point. For each tree on one side of the field, a corresponding tree from the opposite side (north and south side of the field) was also imaged to ensure full coverage. The system captured 40–60 images per tree side from different angles along the X-axis to cover the entire canopy. RGB images used autofocus with occasional manual lighting adjustments, while thermal images were manually focused for sharper temperature contrast. All images were visually inspected for quality. A meteorological station was also used to log environmental data every minute during each acquisition session.
 
-![NSO](https://github.com/user-attachments/assets/ef57b740-1f80-4f1d-9455-318a9981c8e9)
+<h4 align="center"> ![NSO](https://github.com/user-attachments/assets/ef57b740-1f80-4f1d-9455-318a9981c8e9) </h4>
 
 <h4 align="center"> CNN+LSTM Model Configurations: </h4>
 
-![zda](https://github.com/user-attachments/assets/c51fa4c7-8380-4a2f-a2a7-bb3e68698fe8)
+<h4 align="center"> ![zda](https://github.com/user-attachments/assets/c51fa4c7-8380-4a2f-a2a7-bb3e68698fe8) </h4>
 
 **Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
 
