@@ -94,6 +94,12 @@ YOLOv8 pomegranate detection transfer learning result:
 
 <img width="1015" height="347" alt="image" src="https://github.com/user-attachments/assets/d09da223-846b-4ddc-ba4a-c745123bba28" />
 
+Sensitivity analysis split testing on transfer learning reuslts: 
+
+<img width="826" height="626" alt="image" src="https://github.com/user-attachments/assets/3562174c-84aa-4b99-8002-caa5e772ea2d" />
+
+The object detection split tests showed minor differences across the four configurations. Test 1 achieved strong overall performance with mAP50 of 86.6%, mAP50-95 of 54.1%, and F1-score of 82.0%, reflecting high detection accuracy and good localization. Although Test 2 had slightly higher mAP50 (86.9%) and precision (87.1%), it showed a small drop in mAP50-95. Test 3 yielded similar results, while Test 4 had the weakest performance. In the end, Test 1 was selected for generating bounding boxes for Grab-Cut segmentation due to its consistent advantage in localization and recall, offering the best trade-off for precise mask generation.
+
 <h4 align="center"> U-Net architecture: </h4>
 
 ![arc3](https://github.com/user-attachments/assets/37ba06bb-3e30-4ee9-8abe-58870ffa8992)
