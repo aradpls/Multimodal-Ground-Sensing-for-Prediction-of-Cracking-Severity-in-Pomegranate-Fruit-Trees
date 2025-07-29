@@ -58,21 +58,21 @@ This project presents a multimodal deep learning pipeline for predicting pomegra
 
 ![arc2](https://github.com/user-attachments/assets/45935619-e667-4e1c-9347-050df503705e)
 
-<h4 align="center"> PG YOLO traning set up: </h4>
+- PG YOLO traning set up: 
 
 ![ZDAPG](https://github.com/user-attachments/assets/98cbfb1f-f171-4e72-b9bf-8f592cb6aeb9)
 
-<h4 align="center"> Selected transfer learning technique  for object Detection: </h4>
+- Selected transfer learning technique  for object Detection: 
 
 <img width="565" height="107" alt="TL" src="https://github.com/user-attachments/assets/cb7825f6-4008-4bc2-af23-27a4fa872075" />
 
-<h4 align="center"> Transfer learning traning set up: </h4>
+- Transfer learning traning set up:
 
 ![setups](https://github.com/user-attachments/assets/a619e7ed-b0b5-4e0a-9e73-f07c67d880db)
 
 To detect pomegranates on trees, we used the YOLOv8s object detection model, chosen for its balance between speed and accuracy. We initially trained the model on an external dataset (PG-YOLO) containing over 13,000 annotated images of pomegranates. After this, we applied transfer learning by fine-tuning the model on a smaller set of 616 manually labeled images from our own orchard data. This allowed the model to adapt to our specific environmental conditions, such as lighting and background variation, while significantly reducing the need for extensive manual annotation. We tested several train-test splits to evaluate the model's robustness under different data conditions and found that the model maintained strong detection capabilities even with smaller training sets. This step provided accurate bounding boxes around fruits, which were then used in the later stages of the pipeline, such as cropping and segmentation.
 
-<h4 align="center"> Sensitivity analysis split testing on transfer learning model: </h4>
+- Sensitivity analysis split testing on transfer learning model: 
 
 ![SPLOT](https://github.com/user-attachments/assets/9ab27e2f-2587-47ed-b9dc-6f2e83f263df)
 
@@ -94,7 +94,7 @@ YOLOv8 pomegranate detection transfer learning result:
 
 <img width="1015" height="347" alt="image" src="https://github.com/user-attachments/assets/d09da223-846b-4ddc-ba4a-c745123bba28" />
 
-Sensitivity analysis split testing on transfer learning reuslts: 
+- Sensitivity analysis split testing on transfer learning reuslts: 
 
 <img width="826" height="626" alt="image" src="https://github.com/user-attachments/assets/3562174c-84aa-4b99-8002-caa5e772ea2d" />
 
