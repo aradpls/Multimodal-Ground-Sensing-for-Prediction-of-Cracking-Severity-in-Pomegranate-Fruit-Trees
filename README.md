@@ -42,19 +42,19 @@ Data was collected using the TOMMY system, which includes thermal and RGB sensor
 
 ![NSO](https://github.com/user-attachments/assets/ef57b740-1f80-4f1d-9455-318a9981c8e9)
 
-<h4 align="center"> CNN+LSTM model configurations: </h4>
+<h4 align="center"> CNN+LSTM Model Configurations: </h4>
 
 ![zda](https://github.com/user-attachments/assets/c51fa4c7-8380-4a2f-a2a7-bb3e68698fe8)
 
 **Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
 
-<h4 align="center"> Algorithm Pipe line: </h4>
+<h4 align="center"> Algorithm Pipe Line: </h4>
 
 ![NY](https://github.com/user-attachments/assets/02332191-9e82-4a50-9ce6-f5d8158e9915)
 
 This project presents a multimodal deep learning pipeline for predicting pomegranate fruit cracking severity using RGB and thermal images combined with meteorological data. An initial YOLOv8 object detection model, trained with manual annotations and external PG-YOLO data, was fine-tuned and used to detect fruit regions. These detections were then used to generate segmentation masks using the GrabCut algorithm, which refines object boundaries by iteratively separating foreground (fruit) from background (e.g., sky, ground). Segmented images were further processed using a U-Net model to isolate pomegranate regions, followed by image enhancements like CLAHE, Gaussian blurring, and Laplacian edge detection. Thermal and environmental features were extracted and aligned with the images based on timestamps, with feature engineering, multicollinearity checks, and normalization applied. All processed image and tabular inputs were fed into CNN+LSTM models, where CNN handled spatial features and LSTM captured temporal patterns. The final output predicts cracking severity levels for each fruit instance.
 
-<h4 align="center"> YOLOv8 architecture: </h4>
+<h4 align="center"> YOLOv8 Architecture: </h4>
 
 ![arc2](https://github.com/user-attachments/assets/45935619-e667-4e1c-9347-050df503705e)
 
@@ -77,7 +77,7 @@ To detect pomegranates on trees, we used the YOLOv8s object detection model, cho
 ![SPLOT](https://github.com/user-attachments/assets/9ab27e2f-2587-47ed-b9dc-6f2e83f263df)
 
 
-<h4 align="center"> YOLOv8 pomegranate detection Results : </h4>
+<h4 align="center"> YOLOv8 Pomegranate Detection Results : </h4>
 
 YOLOv8 pomegranate detection transfer learning result:
 
@@ -108,17 +108,33 @@ The object detection split tests showed minor differences across the four config
 
 The mean SSIM  score between the YOLO-cropped RGB images and the corresponding Grab-Cut masks was 87.6%, indicating a high level of structural similarity. This suggests that the Grab-Cut algorithm (section  generally succeeded in preserving the shape and spatial structure of the objects identified by YOLO.
 
-<h4 align="center"> U-Net architecture: </h4>
+<h4 align="center"> U-Net Segmentation Architecture: </h4>
 
 ![arc3](https://github.com/user-attachments/assets/37ba06bb-3e30-4ee9-8abe-58870ffa8992)
 
 We used the U-Net architecture for segmenting pomegranates from RGB images. U-Net is ideal for image segmentation, especially when working with small datasets, thanks to its encoder-decoder structure and skip connections. We tested different backbones: ResNet-50, which uses residual connections to support deep architectures, and EfficientNet-B7, which balances network scaling for higher accuracy. The segmentation masks were generated from manually cropped images (using bounding boxes from the detection model) and resized to 160×256 for compatibility with the network. We trained the model using CrossEntropyLoss and optimized it with the AdamW optimizer. Pretrained ImageNet weights were used in some experiments to improve convergence. A learning rate scheduler (ReduceLROnPlateau) was applied to dynamically adjust training progress. The final output of the model is a binary mask identifying pomegranate regions, which is later used for downstream prediction tasks.
 
-<h4 align="center"> CNN + LSTM general intermediate fusion architecture: </h4>
+- Segmentation models Sensitivity Analysis Testing 
+
+![ZDAseef](https://github.com/user-attachments/assets/93436488-e4e8-4090-b3ec-df66e5737adb)
+
+<h4 align="center"> Pomegranate Segmentation Results: </h4>
+
+- Pomegranate Segmentation Results
+
+  <img width="855" height="586" alt="image" src="https://github.com/user-attachments/assets/1b28859f-bf5d-4c08-90c6-d506cfd9b355" />
+
+- Pomegranate Segmentation Example
+
+<img width="560" height="624" alt="image" src="https://github.com/user-attachments/assets/2b1b5297-08d4-4d02-9fc4-494a23151cab" />
+
+The segmentation tests evaluated three configurations using IoU, precision, recall, and F1-score. Test 1, which lacked data augmentation, produced the lowest results with an IoU of 82% and an F1-score of 80.3%, indicating poor generalization. Test 2 introduced data augmentation, leading to a 2.8% increase in IoU, a 7.7% rise in recall, and a 3.7% improvement in F1-score, showing better robustness. Test 3, which used EfficientNet-B7 as the backbone, achieved the highest precision at 89.1%, a slight IoU improvement, and maintained strong recall and F1-score. In the end, Test 3 was selected to segment the entire dataset due to its superior overall performance and more accurate pomegranate segmentation. Its predictions were used as input for the CNN+LSTM models.
+
+<h4 align="center"> CNN + LSTM General Intermediate Fusion Architecture: </h4>
 
 ![ZDA2322223](https://github.com/user-attachments/assets/b3d88d0b-b5c5-4b02-bd23-9c497c3674a5)
 
-<h4 align="center"> Pure LSTM architecture (model-6): </h4>
+<h4 align="center"> Pure LSTM Architecture (model-6): </h4>
 
 ![WEREBLUE](https://github.com/user-attachments/assets/133cba20-1e5d-4f95-91d9-52a7038d2011)
 
