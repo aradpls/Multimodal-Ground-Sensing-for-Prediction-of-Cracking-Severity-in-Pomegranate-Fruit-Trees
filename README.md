@@ -84,6 +84,7 @@ YOLOv8 pomegranate detection transfer learning result:
 ![ZDAresutls](https://github.com/user-attachments/assets/1d71a923-cdef-47c0-b446-e138ff1a7823)
 
 - Raw Transfer
+  
 <h4 align="center"> <img width="875" height="318" alt="image" src="https://github.com/user-attachments/assets/40bf9516-3677-4c32-9eb6-c5a4342e2926" /> </h4>
 
 - Fine tuned model
