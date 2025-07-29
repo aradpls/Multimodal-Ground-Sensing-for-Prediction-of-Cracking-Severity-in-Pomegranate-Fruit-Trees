@@ -154,6 +154,8 @@ Data splitting followed a standard 80-20 rule, with 80 percent used for training
 
 After selecting the best-performing model, further evaluation was conducted under different labeling schemes to better reflect uncertainty and practical needs. Fuzzy labeling wirt fiting MSE loss function was introduced to account for the arbitrary nature of the original class boundaries, which were manually defined without an established reference. In this approach, continuous values between 0 and 1 were assigned to samples based on their distance from class medians. This method helps the model better understand samples that fall near the edges of category definitions. Binary labeling was also tested by collapsing all samples into two categories: cracked (1) and not cracked (0). This binary formulation provides a practical framework for early warning systems to flag high-risk trees. Both fuzzy and binary label experiments used the same training and test splits but with adjusted class distributions. The binary test set contained 128 sequences for class 0 and 514 for class 1. In both cases, the full CNN+LSTM sensitivity analysis was repeated to examine the impact of these alternative labeling strategies on model performance and generalizability.
 
+<h4 align="center"> CNN + LSTM model Results: </h4>
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> </p>
