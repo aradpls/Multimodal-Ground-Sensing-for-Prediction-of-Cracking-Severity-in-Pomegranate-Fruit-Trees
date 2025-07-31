@@ -220,5 +220,10 @@ Among all tested configurations, Combo-0 (clip Limit = 3, grid size = 8, blur ke
 The optimized binary label  Model-5  configuration integrates the best-performing setups identified in both sensitivity analyses . The final training setup uses a batch size of 32 and a learning rate of 0.001. For image preprocessing, the selected parameters include a CLAHE clip limit of 3, grid size of 8, Gaussian blur kernel size of 3, and Laplacian edge detection kernel size of 3. This combined configuration achieved the highest overall performance, with 84.1% accuracy, 70.4% AA, 75.3% precision, 78.3% recall, and a 76.6% F1-score. Although a slightly higher AA was observed in one alternative setup (+0.3%), it performed worse in all other metrics, making this configuration the most balanced and effective for binary cracking prediction. 
 
 
+<h4 align="center"> Short Summary: </h4>
+
+In summary, this work demonstrates a complete end-to-end pipeline for predicting pomegranate fruit cracking using multimodal data. By combining RGB and thermal imagery with meteorological features and integrating object detection, segmentation, image enhancement, and sequence modeling, the system achieved strong results under real orchard conditions. The comparative evaluation of labeling strategies further highlights the benefits of binary classification for stable and practical deployment. This repository provides the full implementation and serves as a foundation for future research in agricultural AI applications.
+
+
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> </p>
