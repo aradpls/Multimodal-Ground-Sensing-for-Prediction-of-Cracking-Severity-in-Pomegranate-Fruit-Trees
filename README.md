@@ -42,10 +42,6 @@ Data was collected using the TOMMY system, which includes thermal and RGB sensor
 
 <h4 align="center"> <img width="668" height="438" alt="image" src="https://github.com/user-attachments/assets/74c701d7-690a-44f9-8f89-0284929b254a" /> </h4>
  
-<h4 align="center"> CNN+LSTM Model Configurations: </h4>
-
- ![zda](https://github.com/user-attachments/assets/c51fa4c7-8380-4a2f-a2a7-bb3e68698fe8) 
-
 **Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
 
 <h4 align="center"> Algorithm Pipe Line: </h4>
@@ -138,6 +134,10 @@ The segmentation tests evaluated three configurations using IoU, precision, reca
 <h4 align="center"> Pure LSTM Architecture (model-6): </h4>
 
 ![WEREBLUE](https://github.com/user-attachments/assets/133cba20-1e5d-4f95-91d9-52a7038d2011)
+
+<h4 align="center"> CNN+LSTM Model Configurations: </h4>
+
+ ![zda](https://github.com/user-attachments/assets/c51fa4c7-8380-4a2f-a2a7-bb3e68698fe8) 
 
 The core model CNN+LSTM architecture for prediction of cracking severity is based on intermediate fusion, where separate streams process each modality in parallel. A convolutional neural network (CNN) extracts spatial features from each of the three RGB image crops, which are then flattened to prepare for fusion. Flattening is necessary because fully connected layers require fixed-length input vectors. Meanwhile, a long short-term memory (LSTM) network processes the sequence of tabular features over the same three time points, producing a final hidden state that captures temporal dependencies. The flattened CNN features and the final LSTM hidden state are then concatenated into a single joint representation. This combined vector is passed through a series of fully connected layers with ReLU activations and dropout for regularization. These layers progressively reduce the dimensionality and enable the model to learn complex relationships between spatial and temporal information. The final output layer produces class logits, which are converted to class probabilities using a softmax function.
 
