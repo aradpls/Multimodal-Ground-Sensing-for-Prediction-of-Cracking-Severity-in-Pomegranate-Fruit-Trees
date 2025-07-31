@@ -195,10 +195,29 @@ Combo-3 (batch size = 8, learning rate = 0.0001) was selected as the base config
 
 Among all tested configurations, Combo-4 (clip limit = 9, grid size = 8, blur kernel = 1, and edge kernel = 1) demonstrated the strongest overall performance across all three metrics. It achieved the lowest MSE (0.060), highest Cosine Similarity (0.829), and a low Inter Side MSE (0.007). Although Combo-1 showed a slightly lower Inter Side MSE (0.006, –0.001), it performed worse in both MSE and Cosine Similarity. Given Combo-4’s consistently better results in the majority of evaluation metrics, it was selected as the final setup for fuzzy label image preprocessing parameter sensitivity analysis.
 
+- Optimal Fuzzy Labels model Results Summarized
+The optimized fuzzy label  Model-5  configuration integrates the best-performing setups identified in both sensitivity analyses. The final training setup uses a batch size of 8 and a learning rate of 0.0001. For image preprocessing, the selected parameters include a CLAHE clip limit of 9, grid size of 8, Gaussian blur kernel size of 1, and Laplacian edge detection kernel size of 1. This combined configuration achieved the best overall performance for fuzzy prediction, with the lowest MSE (0.060), highest Cosine Similarity (0.829), and a low Inter Side MSE (0.007). While one alternative setup reached a slightly lower Inter Side MSE (0.006), it showed weaker results in the other metrics, making this configuration the most reliable and balanced for predicting fuzzy cracking likelihood.
+
 <h4 align="center"> CNN + LSTM model Binary Labeling Results : </h4>
 
+- CNN+LSTM Binary Labling Model Results
+Binary labeling  was used to assess whether a tree would develop cracked fruit (1) or not (0). In this section, Model-5 , the best-performing model   under the original cracking severity labels, was converted into a binary classification model, and the CNN+LSTM sensitivity analysis process  was restarted from the beginning accordingly. This binary setup can serve as an initial stage, helping to identify at-risk trees before applying models that predict the specific severity of fruit cracking  and also reflects the best real-world field conditions as there is no human intervention in terms of creation of labels. In binary labeling the evaluation metrics from the original cracking severity labels were used.
 
+- Batch and Learning Rate Sensitivity Analysis Binary Labels Results
 
+<h4 align="center"> <img width="854" height="870" alt="image" src="https://github.com/user-attachments/assets/59bcfc89-b1d4-4790-80a8-128526960c1b" /> </h4>
+
+Combo-7 (batch size = 32, learning rate = 0.001) was chosen as the base configuration for the image processing sensitivity analysis. It showed the best performance across all five evaluation metrics, with the highest accuracy (84.1%), AA (70.4%), precision (75.3%), recall (78.3%), and F1-score (76.6%). Since it clearly performed better than all other combinations, it was selected to continue with the next stage of the analysis.
+
+- Image Processing Parameter Sensitivity Analysis Binary Labels Results
+
+<h4 align="center"> <img width="844" height="651" alt="image" src="https://github.com/user-attachments/assets/b3223b76-9aee-432d-90dd-fe907cd485af" /> </h4>
+
+Among all tested configurations, Combo-0 (clip Limit = 3, grid size = 8, blur kernel = 3 and edge kernel = 3) demonstrated the strongest overall performance across all five metrics. It achieved the highest accuracy (84.1%), precision (75.3%), recall (78.3%), and F1-score (76.6%), with an AA of 70.4%. Although Combo-1 showed a slightly higher AA (70.7%, +0.3%), it fell behind in all other metrics, including a 2.8% lower accuracy. Given Combo-0's consistently better results in the majority of evaluation metrics, it was selected as the final setup for image preprocessing parameter sensitivity analysis.
+
+- Optimal Binary Labels model Results Summarized
+
+The optimized binary label  Model-5  configuration integrates the best-performing setups identified in both sensitivity analyses . The final training setup uses a batch size of 32 and a learning rate of 0.001. For image preprocessing, the selected parameters include a CLAHE clip limit of 3, grid size of 8, Gaussian blur kernel size of 3, and Laplacian edge detection kernel size of 3. This combined configuration achieved the highest overall performance, with 84.1% accuracy, 70.4% AA, 75.3% precision, 78.3% recall, and a 76.6% F1-score. Although a slightly higher AA was observed in one alternative setup (+0.3%), it performed worse in all other metrics, making this configuration the most balanced and effective for binary cracking prediction. 
 
 
 <h3 align="left">Languages and Tools:</h3>
