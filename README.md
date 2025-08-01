@@ -224,6 +224,8 @@ The optimized binary label  Model-5  configuration integrates the best-performin
 
 In summary, this work demonstrates a complete end-to-end pipeline for predicting pomegranate fruit cracking using multimodal data. By combining RGB and thermal imagery with meteorological features and integrating object detection, segmentation, image enhancement, and sequence modeling, the system achieved strong results under real orchard conditions. The comparative evaluation of labeling strategies further highlights the benefits of binary classification for stable and practical deployment. This repository provides the full implementation and serves as a foundation for future research in agricultural AI applications.
 
+Note: LDA was performed on the original multi-class labels to reduce dimensionality and improve class separation. For the binary and fuzzy setups, the same LDA-transformed features were used, but with updated label definitions. While this allowed for consistent feature representation across tasks, it may have slightly reduced the discriminative power of the projection under the new labeling schemes.
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> </p>
