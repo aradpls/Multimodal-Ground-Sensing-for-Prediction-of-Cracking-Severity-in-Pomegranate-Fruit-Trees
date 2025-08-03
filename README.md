@@ -52,6 +52,7 @@ The full dataset was organized so that images of each tree taken on a particular
 
 - Dataset Arrangement
 
+![or2](https://github.com/user-attachments/assets/873d5f59-1845-4e6f-a9aa-4c793678289c)
 
  
 
