@@ -43,6 +43,16 @@ Data organization is primarily handled in the Model-1 notebook, and adjustments 
 Data was collected using the TOMMY system, which includes thermal and RGB sensors, between August and November 2024 in Tzara near Beit Shemesh, Israel. Images of the Wonderful pomegranate cultivar were captured under three conditions: at night with artificial lighting, at sunrise with dew on the fruits, and during the day under full sun. Around 4400 images were taken, typically twice per time point. For each tree on one side of the field, a corresponding tree from the opposite side (north and south side of the field) was also imaged to ensure full coverage. The system captured 40–60 images per tree side from different angles along the X-axis to cover the entire canopy. RGB images used autofocus with occasional manual lighting adjustments, while thermal images were manually focused for sharper temperature contrast. All images were visually inspected for quality. A meteorological station was also used to log environmental data every minute during each acquisition session.
 
 <h4 align="center"> <img width="668" height="438" alt="image" src="https://github.com/user-attachments/assets/74c701d7-690a-44f9-8f89-0284929b254a" /> </h4>
+
+- Data Collection Dates and Time
+
+![or1](https://github.com/user-attachments/assets/3a9b06a9-5395-4699-98a0-b65631c076d9)
+
+The full dataset was organized so that images of each tree taken on a particular date are matched with images of the same tree from the next data collection session (the next time point). It is important to note that the images of different rows in the field were captured one day apart, ensuring that both sides of the same tree are captured for full coverage. For analysis, this setup will be considered as data collected over the span of one time point. This organization ensures consistency and allows for better temporal comparisons within the dataset. All data collection sessions occurred between 4:30 AM and 9:30 AM which allowed as to capture images of the pomegranate trees under different conditions.
+
+- Dataset Arrangement
+
+
  
 
 
