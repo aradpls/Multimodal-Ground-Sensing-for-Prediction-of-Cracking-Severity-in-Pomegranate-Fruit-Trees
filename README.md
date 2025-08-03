@@ -34,6 +34,8 @@ Image cropping, Thermal image and feature extraction and Fitting thermal and env
 
 Data organization is primarily handled in the Model-1 notebook, and adjustments are also generally made in the CNN+LSTM models notebook.
 
+**Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
+
 <h4 align="center"> Data Collection: </h4>
 
 <h4 align="center"> <img width="632" height="236" alt="zsa" src="https://github.com/user-attachments/assets/e7a0186c-9fd4-4405-9681-411197677c30" /> </h4>
@@ -42,7 +44,7 @@ Data was collected using the TOMMY system, which includes thermal and RGB sensor
 
 <h4 align="center"> <img width="668" height="438" alt="image" src="https://github.com/user-attachments/assets/74c701d7-690a-44f9-8f89-0284929b254a" /> </h4>
  
-**Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
+
 
 <h4 align="center"> Algorithm Pipe Line: </h4>
 
