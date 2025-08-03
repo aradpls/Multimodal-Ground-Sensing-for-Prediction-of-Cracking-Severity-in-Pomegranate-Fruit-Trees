@@ -54,8 +54,7 @@ The full dataset was organized so that images of each tree taken on a particular
 
 ![or2](https://github.com/user-attachments/assets/873d5f59-1845-4e6f-a9aa-4c793678289c)
 
- 
-
+To ensure consistency across the dataset, two artificial time points were created to replace missing data, and time point 0 was excluded due to inconsistencies in image collection. Each RGB image was paired with a corresponding thermal image and aligned meteorological data based on timestamps. Because spatial alignment between RGB and thermal cameras was unreliable, thermal data was used in tabular form rather than as raw images. Each data sequence represents one tree and consists of three time points, stored in a folder containing three CSV files with aligned thermal, meteorological, and image path information. After filtering out incomplete sequences, the final dataset included 9,276 entries organized into 3,092 full three-time-point sequences used for model training.
 
 <h4 align="center"> Algorithm Pipe Line: </h4>
 
