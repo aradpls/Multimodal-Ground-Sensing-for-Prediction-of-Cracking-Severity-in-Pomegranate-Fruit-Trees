@@ -31,10 +31,13 @@ Image cropping, Thermal image and feature extraction and Fitting thermal and env
 - 📈 Statistical analysis code for diffrence in field side predictions
 - 🧠 Fuzzy labeling CNN+LSTM for Model-5 (best performing model) --> labels created in code notebook
 - 🧠 Binary labeling CNN+LSTM for Model-5 (best performing model) --> labels created in code notebook
+- 🧠 Cross-season generalization (Optmized CNN+LSTM; train 2024 seson dataset  --> test 2025 season data set) across all labeling schemes
 
 Data organization is primarily handled in the Model-1 notebook, and adjustments are also generally made in the CNN+LSTM models notebook.
 
-**Note:** The dataset used in this research can be requested via email (aradpls2@gmail.com).
+3. 📊 A detailed description of all datasets used for the different deep learning models in this research, including RGB images, thermal data, meteorological features, annotations, and dataset organization across the 2024 and 2025 seasons, is provided in the DataSets.pdf file.
+
+**Note:** The 2025 season dataset used in this research can be requested via email (aradpls2@gmail.com).
 
 <h4 align="center"> Data Collection: </h4>
 
