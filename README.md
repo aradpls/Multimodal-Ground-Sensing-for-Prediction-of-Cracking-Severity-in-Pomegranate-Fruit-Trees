@@ -53,6 +53,8 @@ Data was collected using the TOMMY system, which includes thermal and RGB sensor
 
  ![cd425623-e18e-433f-9770-e454706e2a3b](https://github.com/user-attachments/assets/018282e4-d40d-42ba-875f-7ad060f3e1d1) 
 
+ <h4 align="center"> <img width="668" height="438" alt="image" src="https://github.com/user-attachments/assets/018282e4-d40d-42ba-875f-7ad060f3e1d1" /> </h4>
+
 The full dataset was organized so that images of each tree taken on a particular date are matched with images of the same tree from the next data collection session (the next time point). It is important to note that the images of different rows in the field were captured one day apart, ensuring that both sides of the same tree are captured for full coverage. For analysis, this setup will be considered as data collected over the span of one time point. This organization ensures consistency and allows for better temporal comparisons within the dataset. All data in both 2024 and 2025 collection sessions occurred between 4:30 AM and 9:30 AM which allowed us to capture images of the pomegranate trees under different conditions.
 
 - Dataset Arrangement
