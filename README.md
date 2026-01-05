@@ -34,7 +34,7 @@ Image cropping, Thermal image and feature extraction and Fitting thermal and env
 
 Data organization is primarily handled in the Model-1 notebook, and adjustments are also generally made in the CNN+LSTM models notebook.
 
-3. Cross-Season Generalization CNN+LSTM Modela Code Folder (For Diffrent labeling schemes):
+3. Cross-Season Generalization CNN+LSTM Models Code Folder (For Diffrent labeling schemes):
 - 🧠 Cross-season generalization (Optmized CNN+LSTM; train 2024 seson dataset  --> test 2025 season data set) across all labeling schemes
 
 4. 📊 A detailed description of all datasets used for the different deep learning models in this research, including RGB images, thermal data, meteorological features, annotations, and dataset organization across the 2024 and 2025 seasons, is provided in the DataSets.pdf file (You need to download the file to get access to the links).
