@@ -35,7 +35,7 @@ Image cropping, Thermal image and feature extraction and Fitting thermal and env
 
 Data organization is primarily handled in the Model-1 notebook, and adjustments are also generally made in the CNN+LSTM models notebook.
 
-3. 📊 A detailed description of all datasets used for the different deep learning models in this research, including RGB images, thermal data, meteorological features, annotations, and dataset organization across the 2024 and 2025 seasons, is provided in the DataSets.pdf file.
+3. 📊 A detailed description of all datasets used for the different deep learning models in this research, including RGB images, thermal data, meteorological features, annotations, and dataset organization across the 2024 and 2025 seasons, is provided in the DataSets.pdf file (You need to download the file to get access to the links).
 
 **Note:** The 2025 season dataset used in this research can be requested via email (aradpls2@gmail.com).
 
