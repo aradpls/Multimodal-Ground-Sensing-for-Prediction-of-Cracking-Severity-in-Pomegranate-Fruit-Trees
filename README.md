@@ -65,6 +65,36 @@ To ensure consistency across the dataset, two artificial time points were create
 
 Three labeling strategies were used to define the cracking status of pomegranate trees. First, multi-class severity labels were assigned by manually counting the number of cracked fruits per tree at the final time point: label 0 (0–2 cracked fruits), label 1 (3–5), label 2 (6–8), and label 3 (more than 8). These served as the ground truth for severity-based prediction tasks. Second, a fuzzy labeling approach was applied to account for uncertainty near class boundaries. This method assigned partial membership values to each severity class based on proximity to the class medians (1, 4, and 8 cracked fruits). Fuzzy labels enabled smoother transitions between classes and better modeled borderline cases. Finally, a binary labeling scheme was developed, where trees were labeled as 0 (no cracking) or 1 (any cracking present), regardless of severity. This simplified the prediction task and proved to be the most robust and practical strategy, especially for early warning purposes. All three labeling strategies were evaluated using the same CNN+LSTM architecture, with sensitivity analyses conducted to compare their effects on model performance.
 
+- Model performance evaluation measures 
+The Following metrics were used to evaluate the performance of the different models: Recall Eq.(1) Precision Eq.(2) and F1-Score Eq.(3). The main objective is to maximize all three measures; however, given the trade-off between precision and recall, priority is placed on recall to ensure the correct label is identified. Additionally, each DL model had a main evaluation metric to evaluate accuracy of predictions, which is explained separately in the subsections below.
+Recall=TP/(TP+FN)   		          								  	  	  (1)
+Precision=TP/(TP+FP)  									 		  (2)
+F1score=  2TP/(2TP+FP+FN)  									  	  	  (3)
+where TP is True Positive, TN is True Negative, FP is False Positive, and FN is False Negative.
+2.4.1. Object detection model evaluation
+Mean Average Precision (mAP) Eq.(4) was used to evaluate the object detection model. Performance was reported using mAP50, computed at an IoU threshold of 0.50, and mAP50-95, averaged over Intersection over Union (IoU) thresholds from 0.50 to 0.95 in steps of 0.05, providing a stricter assessment of localization accuracy.
+mAP=(1/N ∑_(i=1)^N▒〖AP_i 〗  )			   							 	  (4)
+where N is the number of object classes and AP_i is the Average Precision for class i.
+2.4.2. Segmentation model evaluation
+For segmentation evaluation, IoU Eq.(5) was used as the primary metric. IoU measures the overlap between the predicted and ground truth.
+IoU=  (Area of Overlap)/(Area of Union)  								                 	 	  (5)
+where Area of Overlap is the intersection between the predicted and ground-truth masks, and Area of Union is the total area covered by both masks.
+2.4.3. CNN+LSTM for prediction of cracking severity evaluation
+The model in both cracking severity labels (section 2.3.1) and binary labeling (section 2.3.3) was evaluated using accuracy Eq.(6) metric of the last time point (i.e., the predicted value on the last time point). This approach assessed how well the model captures temporal patterns and ensures consistent performance in predicting cracking overtime. Additionally, an Agreement Accuracy (AA) (Peleg., A., 2026) Eq.(7) metric was created to evaluate consistency between the two tree sides (Fig. 2), meaning that predictions from data at the north side of the field and south side of the field (section 2.1) for the same tree must be similar and assigned the correct label. This metric represents a stricter form of accuracy, as it requires agreement across both sides of the tree to be considered correct.
+Accuracy=  (TP+TN)/(TP+FP+TN+FN)  								  		  (6)
+AA=  (Agreement between north and south same samples)/(All samples)  					  		              (7)
+2.4.4. Fuzzy labeling evaluation metrics
+To evaluate the performance and consistency of the fuzzy label (section 2.3.2) predictions, three complementary metrics were used. Mean Squared Error (MSE) Eq.(8) quantifies how far the predicted fuzzy vector is from the expected soft label. Inter-side MSE metric (Peleg., A., 2026) Eq.(9) was used to compare predictions from the north and south sides of the field for the same tree, ensuring that both viewpoints produce similar outputs, as they observe the same fruit from different angles. Finally, to enable a numeric comparison between soft (fuzzy) labels and hard labeling schemes (multiclass and binary), a composite accuracy (CA) score was defined by combining fuzzy-label agreement, computed as one minus the normalized MSE Eq.(10) with hard-label classification of fuzzy-label accuracy Eq.(7) using a weighted-sum formulation Eq.(11) with equal weighting (α=0.5) (Peleg., A., 2026). Together, these metrics assess fuzzy prediction accuracy, cross-view consistency, and agreement with hard-label performance.
+MSE=1/N ∑_(i=1)^N▒[1/C ∑_(i=1)^C▒〖(p_i- t_i)〗^2 ] 									                 (8)
+where p_i is the predicted probability for class i,  t_i is the target fuzzy membership for class i, N is the number of samples and C is the total number of classes.
+MSE(p ⃗_(North,) p ⃗_(south  ))											  (9)
+where p ⃗_(north  ) and p ⃗_(south  ) are the fuzzy prediction vectors from the north and south sides of the field for the same tree.
+〖MSE〗_norm=  MSE/(2/C)							 			                             (10)
+where C is the number of classes, and 2/C represents the maximum possible MSE Eq.(8) obtained when the predicted and target vectors are one-hot vectors assigned to different classes.
+CA= α∙(1-〖MSE〗_norm )+(1-α)∙Accuracy				            			(11)
+where α∈[0,1] controls the relative contribution of fuzzy-label agreement and hard-label classification accuracy.
+
+
 <h4 align="center"> Algorithm Pipe Line: </h4>
 
 ![NY](https://github.com/user-attachments/assets/02332191-9e82-4a50-9ce6-f5d8158e9915)
