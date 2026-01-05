@@ -49,6 +49,8 @@ Data was collected using the TOMMY system, which includes thermal and RGB sensor
 
 <h4 align="center"> <img width="668" height="438" alt="image" src="https://github.com/user-attachments/assets/74c701d7-690a-44f9-8f89-0284929b254a" /> </h4>
 
+<img width="547" height="181" alt="image" src="https://github.com/user-attachments/assets/37d6a64c-07a2-4eb6-93d4-2aad10782d29" />
+
 - Data Collection Dates and Time
 
 ![or1](https://github.com/user-attachments/assets/3a9b06a9-5395-4699-98a0-b65631c076d9)
