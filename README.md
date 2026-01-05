@@ -49,17 +49,15 @@ Data was collected using the TOMMY system, which includes thermal and RGB sensor
 
 <h4 align="center"> <img width="668" height="438" alt="image" src="https://github.com/user-attachments/assets/74c701d7-690a-44f9-8f89-0284929b254a" /> </h4>
 
-<img width="547" height="181" alt="image" src="https://github.com/user-attachments/assets/37d6a64c-07a2-4eb6-93d4-2aad10782d29" />
-
 - Data Collection Dates and Time
 
-![or1](https://github.com/user-attachments/assets/3a9b06a9-5395-4699-98a0-b65631c076d9)
+![cd425623-e18e-433f-9770-e454706e2a3b](https://github.com/user-attachments/assets/018282e4-d40d-42ba-875f-7ad060f3e1d1)
 
 The full dataset was organized so that images of each tree taken on a particular date are matched with images of the same tree from the next data collection session (the next time point). It is important to note that the images of different rows in the field were captured one day apart, ensuring that both sides of the same tree are captured for full coverage. For analysis, this setup will be considered as data collected over the span of one time point. This organization ensures consistency and allows for better temporal comparisons within the dataset. All data collection sessions occurred between 4:30 AM and 9:30 AM which allowed as to capture images of the pomegranate trees under different conditions.
 
 - Dataset Arrangement
 
-![or2](https://github.com/user-attachments/assets/873d5f59-1845-4e6f-a9aa-4c793678289c)
+![cd6ef47d-86f4-4c10-8e47-76ef6786e02e](https://github.com/user-attachments/assets/a373afb0-220b-4d6c-8508-f7c49f3fbe99)
 
 To ensure consistency across the dataset, two artificial time points were created to replace missing data, and time point 0 was excluded due to inconsistencies in image collection. Each RGB image was paired with a corresponding thermal image and aligned meteorological data based on timestamps. Because spatial alignment between RGB and thermal cameras was unreliable, thermal data was used in tabular form rather than as raw images. Each data sequence represents one tree and consists of three time points, stored in a folder containing three CSV files with aligned thermal, meteorological, and image path information. After filtering out incomplete sequences, the final dataset included 9,276 entries organized into 3,092 full three-time-point sequences used for model training.
 
