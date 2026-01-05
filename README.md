@@ -69,7 +69,7 @@ Three labeling strategies were used to define the cracking status of pomegranate
 <h4 align="center">  <img width="672" height="238" alt="image" src="https://github.com/user-attachments/assets/0bd4cef4-9fc2-4d60-bfc4-1cb295cd3009" /> </h4>
 
 - Object detection model evaluation
-<h4 align="center">  <img width="689" height="183" alt="image" src="https://github.com/user-attachments/assets/0f85761b-4dc8-4e44-b7de-a01c41aa55bc" /> </h4>
+<h4 align="center">  <img width="668" height="153" alt="image" src="https://github.com/user-attachments/assets/37679db7-dfc4-45f6-a96d-17363a491726" /> </h4>
 
 - Segmentation model evaluation
 <h4 align="center">  <img width="680" height="134" alt="image" src="https://github.com/user-attachments/assets/b8265a71-8a2f-4172-aded-a9edd51edc1a" /> </h4>
