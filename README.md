@@ -78,7 +78,7 @@ Three labeling strategies were used to define the cracking status of pomegranate
 <h4 align="center"> <img width="826" height="310" alt="image" src="https://github.com/user-attachments/assets/bb208a0d-e119-4971-aed7-7d6402d62d94" /> </h4>
 
 - Fuzzy labeling evaluation metrics
-<h4 align="center"> <img width="731" height="650" alt="image" src="https://github.com/user-attachments/assets/049e0d4a-341f-4c08-872c-95c9e07dad12" /></h4>
+<h4 align="center"> <img width="731" height="650" alt="image" src="https://github.com/user-attachments/assets/6aa977b3-3b0d-4bb8-ae39-512c9998e001" /> </h4>
 
 <h4 align="center"> Algorithm Pipe Line: </h4>
 
