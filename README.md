@@ -268,7 +268,7 @@ Compared to the same optimized model trained and tested only on the 2024 season,
 <h4 align="center">  <img width="861" height="157" alt="image" src="https://github.com/user-attachments/assets/976a32b1-38d3-4bdf-8ca2-7d6da1b2999c" /> </h4>
 
 -CNN+LSTM tree fuzzy cracking severity labeling model generalization test results
-Compared to the same optimized configuration trained and evaluated solely on the 2024 season, all fuzzy-based evaluation metrics exhibited changes across seasons. MSE increased by +0.008, Cosine similarity increased by 3.8%, inter-side MSE increased by +0.01 and CA decreased by -8.7% indicating that the fuzzy labeling scheme maintained relatively stable performance under the new seasonal conditions.
+Compared to the same optimized configuration trained and evaluated solely on the 2024 season, all fuzzy-based evaluation metrics exhibited changes across seasons. MSE increased by +0.008, Cosine similarity increased by -0.038, inter-side MSE increased by +0.01 and CA decreased by -8.7% indicating that the fuzzy labeling scheme maintained relatively stable performance under the new seasonal conditions.
 
 <h4 align="center"> <img width="772" height="131" alt="image" src="https://github.com/user-attachments/assets/963d2941-e4c1-4b6c-b24e-231bedf42cb2" /> </h4>
 
