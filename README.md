@@ -23,6 +23,7 @@ CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from 
 - ✂️ Image cropping code (RGB and Thermal sensors)
 - 🌡️ Thermal image and feature extraction code
 - 🔥🌍 Fitting thermal and environmental tabular data code
+- 📄 Research publication paper (full manuscript / preprint) - From Labeling Strategies to Cross-Season Generalization: A Multimodal Deep Learning Framework for Tree-Level Prediction of Pomegranate Fruit Cracking
 
 Image cropping, Thermal image and feature extraction and Fitting thermal and environmental tabular data in Processing notebook.
 
