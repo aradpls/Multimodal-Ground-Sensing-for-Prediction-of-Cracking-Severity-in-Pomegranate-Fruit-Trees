@@ -170,11 +170,11 @@ The segmentation tests evaluated three configurations using IoU, precision, reca
 
 <h4 align="center"> CNN + LSTM General Intermediate Fusion Architecture: </h4>
 
-![Fc23](https://github.com/user-attachments/assets/7329775c-2385-47d1-8091-8728784b94a0)
+![FACDD2](https://github.com/user-attachments/assets/1bb29b70-5435-47b4-94b2-fa61c1543abc)
 
 <h4 align="center"> Pure LSTM Architecture (model-6): </h4>
 
-![FC22](https://github.com/user-attachments/assets/7c4ec5db-7957-405f-b4d5-eaa3a1cdb0a5)
+![FACDD1](https://github.com/user-attachments/assets/387826f4-654e-40e1-8820-a4634689d81e)
 
 <h4 align="center"> CNN+LSTM Model Configurations: </h4>
 
