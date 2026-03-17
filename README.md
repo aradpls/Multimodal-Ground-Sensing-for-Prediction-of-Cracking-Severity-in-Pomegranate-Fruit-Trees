@@ -273,6 +273,7 @@ Using the optimized model-5, which was selected based on its performance when tr
 <h4 align="center"> CNN + LSTM model Binary Labeling Results : </h4>
 
 - CNN+LSTM Binary Labling Model Results
+
 Binary labeling  was used to assess whether a tree would develop cracked fruit (1) or not (0). In this section, Model-5 , the best-performing model   under the original cracking severity labels, was converted into a binary classification model, and the CNN+LSTM sensitivity analysis process  was restarted from the beginning accordingly. This binary setup can serve as an initial stage, helping to identify at-risk trees before applying models that predict the specific severity of fruit cracking  and also reflects the best real-world field conditions as there is no human intervention in terms of creation of labels. In binary labeling the evaluation metrics from the original cracking severity labels were used.
 
 - Batch and Learning Rate Sensitivity Analysis Binary Labels Results
