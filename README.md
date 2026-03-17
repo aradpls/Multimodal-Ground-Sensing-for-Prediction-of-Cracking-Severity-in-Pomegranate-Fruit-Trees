@@ -134,7 +134,7 @@ To detect pomegranates on trees, we used the YOLOv8s object detection model, cho
 
 - Sensitivity analysis split testing on transfer learning reuslts: 
 
-<h4 align="center"> <img width="826" height="626" alt="image" src="https://github.com/user-attachments/assets/3562174c-84aa-4b99-8002-caa5e772ea2d" /> </h4>
+<h4 align="center"> <img width="803" height="480" alt="image" src="https://github.com/user-attachments/assets/053fe0ad-f629-4c67-b323-4e831795bf94" /> </h4>
 
 The object detection split tests showed minor differences across the four configurations. Test 1 achieved strong overall performance with mAP50 of 86.6%, mAP50-95 of 54.1%, and F1-score of 82.0%, reflecting high detection accuracy and good localization. Although Test 2 had slightly higher mAP50 (86.9%) and precision (87.1%), it showed a small drop in mAP50-95. Test 3 yielded similar results, while Test 4 had the weakest performance. In the end, Test 1 was selected for generating bounding boxes for Grab-Cut segmentation due to its consistent advantage in localization and recall, offering the best trade-off for precise mask generation.
 
