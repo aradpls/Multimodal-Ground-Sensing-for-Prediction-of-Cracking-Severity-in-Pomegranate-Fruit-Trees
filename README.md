@@ -210,7 +210,7 @@ Overall, the progression from AModel-1 (A = avrage, model one and two trains spe
 
 - Model-5 CNN + LSTM intermediate fusion architecture
 
-h4 align="center"> <img width="909" height="511" alt="image" src="https://github.com/user-attachments/assets/98ca4a84-c50c-4699-911d-4e85b4dedfdb" /> </h4>
+<h4 align="center"> <img width="909" height="511" alt="image" src="https://github.com/user-attachments/assets/98ca4a84-c50c-4699-911d-4e85b4dedfdb" /> </h4>
 
 - Batch and Learning Rate Sensitivity Analysis Results
 
