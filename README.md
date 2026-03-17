@@ -202,19 +202,23 @@ After selecting the best-performing model, further evaluation was conducted unde
 
 - CNN+LSTM Model Results
 
-<h4 align="center"> <img width="925" height="711" alt="image" src="https://github.com/user-attachments/assets/019d50d0-1dc7-47bc-8bd1-7c66db446340" /> </h4>
+<h4 align="center"> <img width="879" height="524" alt="image" src="https://github.com/user-attachments/assets/96465649-0f67-473a-855e-4144ad9a688a" /> </h4>
 
 Overall, the progression from AModel-1 (A = avrage, model one and two trains speratly on north side and south sude of the dield) to Model-5 demonstrated mostly consistent and substantial improvements across all metrics, while model-6 showed high decreases in performance, confirming that Model-5 provided the most balanced and effective configuration. In the end, Model-5 was selected to perform the full sensitivity analysis, as it demonstrated the best overall performance by achieving the highest accuracy, AA, F1-score, precision and recall. This configuration showed stronger generalization and better predictions compared to the other tested models. Therefore, Model-5  was chosen as the reference model for analysis of parameter sensitivity  and fuzzy and binary class labeling .
 
+- Model-5 CNN + LSTM intermediate fusion architecture
+
+h4 align="center"> <img width="909" height="511" alt="image" src="https://github.com/user-attachments/assets/98ca4a84-c50c-4699-911d-4e85b4dedfdb" /> </h4>
+
 - Batch and Learning Rate Sensitivity Analysis Results
 
-<h4 align="center"> <img width="724" height="738" alt="image" src="https://github.com/user-attachments/assets/bb961770-4a7f-4e63-906c-08267d103b9d" /> </h4>
+<h4 align="center"> <img width="926" height="552" alt="image" src="https://github.com/user-attachments/assets/248b1d5d-cefa-455e-945a-d82336693f20" /> </h4>
 
 Combo-3 (batch size = 8 , learning rate = 0.0001) was selected as the reference configuration for the image processing parameter sensitivity analysis. Although Combo-4 achieved a slightly higher AA score (47.5% vs. 46.7%), the overall performance difference was minimal, and Combo-3 offered a more favorable trade-off across all evaluation metrics. Specifically, it achieved the highest F1-score (47.4%) and maintained strong accuracy (64.5%) and recall (41.2%), indicating balanced and robust predictive power. Given its consistently strong results and stable behavior across key metrics, Combo-3 was chosen as the base configuration for evaluating the effect of image enhancement parameters. 
 
 - Image Processing Parameter Sensitivity Analysis Results
 
-<h4 align="center"> <img width="861" height="656" alt="image" src="https://github.com/user-attachments/assets/0ea05197-80bf-4620-a395-b2a6d327e6f8" /> </h4>
+<h4 align="center"> <img width="893" height="533" alt="image" src="https://github.com/user-attachments/assets/7560e363-169c-4394-a4da-4bb4e89328b9" /> </h4>
 
 Among all tested configurations, Combo-1 (clip Limit = 2, grid size = 8, blur kernel = 5 and edge kernel = 1) demonstrated the strongest overall performance across all five metrics. It achieved the highest accuracy (68.8%) and AA (55.7%), with consistent gains in precision (56.3%), recall (45.9%), and F1-score (50.4%). While Combo-0 also performed well, Combo-1 outperformed it by 4.3% in accuracy and 9.0% in AA, offering a more balanced and robust configuration. Given these improvements, Combo-1 was selected as the final setup for image preprocessing parameter sensitivity analysis.
 
@@ -222,19 +226,19 @@ Among all tested configurations, Combo-1 (clip Limit = 2, grid size = 8, blur ke
 
 - CNN+LSTM Fuzzy Labling Model Results 
 
-<h4 align="center"> <img width="936" height="572" alt="image" src="https://github.com/user-attachments/assets/3ca71165-edaa-4c40-b34d-8ba721539677" /> </h4>
+<h4 align="center"> <img width="898" height="445" alt="image" src="https://github.com/user-attachments/assets/cbbf9229-e8f8-4c6d-8736-4e85da669fca" /> </h4>
 
 The results  compare three fuzzy  membership strategies on best preforming model model-5 configuration in original cracking severity labels: Inverse Distance, Triangle, and Gaussian , evaluated using MSE, cosine similarity, and inter-side MSE (section 3.3.7.5). Inverse Distance fuzzy showed moderate performance with MSE at 0.085, cosine similarity at 0.785, and the lowest inter-side MSE at 0.009. Triangle fuzzy delivered the weakest performance, with the highest MSE (0.100, +0.015 vs. Inverse Distance), the lowest cosine similarity (0.750, –0.035), and the worst inter-side MSE (0.017, +0.008). In contrast, Gaussian fuzzy achieved the best overall performance with the lowest MSE (0.066, –0.034 vs. Triangle and –0.019 vs. Inverse Distance), the highest cosine similarity (0.809, +0.059 from Triangle), and competitive inter-side MSE (0.012, –0.005 vs. Triangle and +0.003 vs. Inverse Distance). Based on these results, Gaussian fuzzy was selected as the preferred strategy for the sensitivity analysis, as it provided the best overall predictive quality, even though Inverse Distance had slightly better consistency between the north and south sides but the difference is not significant.
 
 - Batch and Learning Rate Sensitivity Analysis Fuzzy Labels Results
 
-<h4 align="center"> <img width="861" height="702" alt="image" src="https://github.com/user-attachments/assets/07920af7-f77c-4847-97f1-114d638abba9" /> </h4>
+<h4 align="center"> <img width="937" height="464" alt="image" src="https://github.com/user-attachments/assets/3f2ff927-40ef-4491-aa37-abddf6566f4c" /> </h4>
 
 Combo-3 (batch size = 8, learning rate = 0.0001) was selected as the base configuration for the image processing parameter sensitivity analysis. It achieved the highest Cosine Similarity (0.815), a low MSE (0.065), and a competitive Inter Side MSE (0.008). While Combo-12 had the lowest Inter Side MSE (0.005), Combo-3 offered the most balanced performance across all three metrics, making it the suitable choice for the next stage of analysis.
 
 - Image Processing Parameter Sensitivity Analysis Fuzzy Labels Results
 
-<h4 align="center"> <img width="881" height="585" alt="image" src="https://github.com/user-attachments/assets/1e20d36c-4049-4d15-963c-c21953aa1e7f" /> </h4>
+<h4 align="center"> <img width="904" height="448" alt="image" src="https://github.com/user-attachments/assets/9ab1d1cf-6120-4596-9438-22eee18a3773" /> </h4>
 
 Among all tested configurations, Combo-4 (clip limit = 9, grid size = 8, blur kernel = 1, and edge kernel = 1) demonstrated the strongest overall performance across all three metrics. It achieved the lowest MSE (0.060), highest Cosine Similarity (0.829), and a low Inter Side MSE (0.007). Although Combo-1 showed a slightly lower Inter Side MSE (0.006, –0.001), it performed worse in both MSE and Cosine Similarity. Given Combo-4’s consistently better results in the majority of evaluation metrics, it was selected as the final setup for fuzzy label image preprocessing parameter sensitivity analysis.
 
@@ -249,13 +253,13 @@ Binary labeling  was used to assess whether a tree would develop cracked fruit (
 
 - Batch and Learning Rate Sensitivity Analysis Binary Labels Results
 
-<h4 align="center"> <img width="854" height="870" alt="image" src="https://github.com/user-attachments/assets/59bcfc89-b1d4-4790-80a8-128526960c1b" /> </h4>
+<h4 align="center"> <img width="840" height="501" alt="image" src="https://github.com/user-attachments/assets/fe77798a-b29d-4f2f-be17-6a1baa40dd4b" /> </h4>
 
 Combo-7 (batch size = 32, learning rate = 0.001) was chosen as the base configuration for the image processing sensitivity analysis. It showed the best performance across all five evaluation metrics, with the highest accuracy (84.1%), AA (70.4%), precision (75.3%), recall (78.3%), and F1-score (76.6%). Since it clearly performed better than all other combinations, it was selected to continue with the next stage of the analysis.
 
 - Image Processing Parameter Sensitivity Analysis Binary Labels Results
 
-<h4 align="center"> <img width="844" height="651" alt="image" src="https://github.com/user-attachments/assets/b3223b76-9aee-432d-90dd-fe907cd485af" /> </h4>
+<h4 align="center"> <img width="871" height="519" alt="image" src="https://github.com/user-attachments/assets/dc326dad-bbec-4201-8afd-c0fd8715af5b" /> </h4>
 
 Among all tested configurations, Combo-0 (clip Limit = 3, grid size = 8, blur kernel = 3 and edge kernel = 3) demonstrated the strongest overall performance across all five metrics. It achieved the highest accuracy (84.1%), precision (75.3%), recall (78.3%), and F1-score (76.6%), with an AA of 70.4%. Although Combo-1 showed a slightly higher AA (70.7%, +0.3%), it fell behind in all other metrics, including a 2.8% lower accuracy. Given Combo-0's consistently better results in the majority of evaluation metrics, it was selected as the final setup for image preprocessing parameter sensitivity analysis.
 
