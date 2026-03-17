@@ -160,11 +160,11 @@ We used the U-Net architecture for segmenting pomegranates from RGB images. U-Ne
 
 - Pomegranate Segmentation Results
 
-<h4 align="center"> <img width="855" height="586" alt="image" src="https://github.com/user-attachments/assets/1b28859f-bf5d-4c08-90c6-d506cfd9b355" /> </h4>
+<h4 align="center"> <img width="745" height="445" alt="image" src="https://github.com/user-attachments/assets/2826425f-ecd9-4fa8-858b-5c2ef0f01601" /> </h4>
 
 - Pomegranate Segmentation Example
 
-<h4 align="center"> <img width="560" height="624" alt="image" src="https://github.com/user-attachments/assets/2b1b5297-08d4-4d02-9fc4-494a23151cab" /> </h4>
+<h4 align="center"> <img width="1012" height="565" alt="image" src="https://github.com/user-attachments/assets/40244905-2695-4930-be35-2b5f58de292c" /> </h4>
 
 The segmentation tests evaluated three configurations using IoU, precision, recall, and F1-score. Test 1, which lacked data augmentation, produced the lowest results with an IoU of 82% and an F1-score of 80.3%, indicating poor generalization. Test 2 introduced data augmentation, leading to a 2.8% increase in IoU, a 7.7% rise in recall, and a 3.7% improvement in F1-score, showing better robustness. Test 3, which used EfficientNet-B7 as the backbone, achieved the highest precision at 89.1%, a slight IoU improvement, and maintained strong recall and F1-score. In the end, Test 3 was selected to segment the entire dataset due to its superior overall performance and more accurate pomegranate segmentation. Its predictions were used as input for the CNN+LSTM models.
 
