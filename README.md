@@ -188,6 +188,8 @@ Six model configurations were developed to progressively incorporate different e
 
 Data splitting followed a standard 80-20 rule, with 80 percent used for training and 20 percent for testing. From the training set, 20 percent was further set aside for validation. In early experiments (Models 1 and 2), the dataset was split based on the tree row’s orientation (north or south) to determine whether location had an impact on cracking behavior. Later models combined data from both rows after statistical tests confirmed no significant differences in cracking behavior or prediction variance. When split by row, there were 980 training, 245 validation, and 321 test samples per side. When combined, the dataset included 1960 training, 490 validation, and 642 test samples. All models were trained with a batch size of 16 and an initial learning rate of 0.001. Early models were trained for 10 epochs, while all subsequent models were trained for 30. Model weights corresponding to the lowest validation loss were saved and used for final evaluation. Notably, the test set contained only class 0 and class 2 samples, comprising 334 and 298 three-time-point sequences, respectively. After identifying the best-performing model (model-5) that traind with clip limet 3 and grid size 8 in CLHAE, Gaussian Bluring with Kernel-size of 3 and Laplacian Edge detection with also kernal size of 3, a two-stage sensitivity analysis was conducted. The first stage focused on evaluating different learning rates and batch sizes to determine the optimal training configuration. The second stage analyzed the impact of various image processing parameters on model performance.
 
+After selecting the optimized model configuration for each labeling scheme on the sensitivity analysis, the training process and model evolution were repeated 5 times. The final test results are reported as the mean and standard deviation (Std) of the evaluation metrics across repeated model training instances, to mitigate the effects of random weight initialization and training variability.
+
 <h4 align="center"> Batch and Learning Rate Analysis: </h4>
 
 ![ZDa](https://github.com/user-attachments/assets/03bffc44-2692-46f0-be6b-e7c8a183c39f)
@@ -221,6 +223,18 @@ Combo-3 (batch size = 8 , learning rate = 0.0001) was selected as the reference 
 <h4 align="center"> <img width="893" height="533" alt="image" src="https://github.com/user-attachments/assets/7560e363-169c-4394-a4da-4bb4e89328b9" /> </h4>
 
 Among all tested configurations, Combo-1 (clip Limit = 2, grid size = 8, blur kernel = 5 and edge kernel = 1) demonstrated the strongest overall performance across all five metrics. It achieved the highest accuracy (68.8%) and AA (55.7%), with consistent gains in precision (56.3%), recall (45.9%), and F1-score (50.4%). While Combo-0 also performed well, Combo-1 outperformed it by 4.3% in accuracy and 9.0% in AA, offering a more balanced and robust configuration. Given these improvements, Combo-1 was selected as the final setup for image preprocessing parameter sensitivity analysis.
+
+-2024 Data Optimized Mean + Std  Multi-Class Labeling Model Results 
+
+The optimal model-5  configuration integrates the best-performing components identified in both sensitivity analyses. The final training setup uses a batch size of 8 and a learning rate of 0.0001. For image preprocessing, the selected parameters include a CLAHE clip limit of 2, grid size of 8, Gaussian blur kernel size of 5, and Laplacian edge detection kernel size of 1. The table 31 summarizes the average result and Std obtained after training and evaluating this labeling configuration 5 times on the 2024 season dataset. 
+
+<h4 align="center"> <img width="1019" height="330" alt="image" src="https://github.com/user-attachments/assets/cc51c053-0b22-4313-bcd4-c2589fa3a56b" /> </h4>
+
+- Multi-Class Cracking Severity Labels Generalization Result
+
+Using the optimized model-5 , which was first trained and tested on the 2024 season dataset using the multi-class labels, the model was then tested on the 2025 season dataset and demonstrated limited predictive stability. Compared to the same optimized model trained and tested only on the 2024 season, performance degraded substantially . This configuration achieved 35% accuracy, 11.3% AA, 32% precision, 31.6% recall and 31.6% F1-score indicating reduced robustness of predictions under the new seasonal conditions for this labeling scheme.
+
+<h4 align="center"> <img width="777" height="440" alt="image" src="https://github.com/user-attachments/assets/076d0480-e5ba-41d0-bb00-16acb207cbde" /> </h4>
 
 <h4 align="center"> CNN + LSTM model Fuzzy Labeling Results : </h4>
 
