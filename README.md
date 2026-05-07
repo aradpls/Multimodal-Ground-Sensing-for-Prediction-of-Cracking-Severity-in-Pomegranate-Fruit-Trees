@@ -13,7 +13,7 @@ Hi 👋, This research investigates the prediction of on-tree pomegranate fruit 
 
 CrackSense (https://cracksense.eu/) is a Horizon Europe initiative running from January 2023 to December 2026. It brings together 14 partners from 7 countries to address the challenge of fruit cracking in crops such as citrus, pomegranate, table grapes, and sweet cherries. The project focuses on developing and scaling advanced sensing technologies, aiming to provide real-time sensor data through experimental field trials and pilot implementations. As part of this broader multidisciplinary effort, this thesis contributes to CrackSense’s goal of enhancing precision agriculture through intelligent monitoring and prediction systems.
 
-<h4 align="center"> <img width="246" height="125" alt="תמונה1" src="https://github.com/user-attachments/assets/495506a4-be14-4ea7-a601-0667fad7af31" /> </h4>
+<p align="center"> <img width="246" height="125" alt="תמונה1" src="https://github.com/user-attachments/assets/495506a4-be14-4ea7-a601-0667fad7af31" /> </p>
 
 
 <strong> 📁 In this repository You will have access to:</strong> 
