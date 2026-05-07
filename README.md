@@ -127,7 +127,7 @@ To detect pomegranates on trees, we used the YOLOv8s object detection model, cho
 
 <h4 align="center"> <img width="857" height="312" alt="image" src="https://github.com/user-attachments/assets/2d674b70-c1f5-47a0-9a16-8f3cb5c2b85b" /> </h4>
 
-- Raw trnsfer Vs Fine tuned model precision recall curve
+- Raw transfer Vs Fine tuned model precision recall curve
 
 <h4 align="center"> <img width="1015" height="347" alt="image" src="https://github.com/user-attachments/assets/d09da223-846b-4ddc-ba4a-c745123bba28" /> </h4>
 
